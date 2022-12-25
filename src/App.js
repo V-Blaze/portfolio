@@ -11,7 +11,7 @@ import { Home } from './pages';
 function App() {
   return (
     <div className="relative sm:-8 p-4 bg-[#13131a] min-h-screen flex flex-row">
-      <div className="sm:flex hidden mr-10 relative linear-gradient" >
+      <div className="sm:flex hidden mr-10 relative linear-gradient">
         <Sidebar />
       </div>
 
@@ -23,7 +23,7 @@ function App() {
         </Routes>
       </div>
     </div>
-  )
+  );
 }
 
 export default App;
