@@ -14,6 +14,9 @@ import loader from './loader.svg';
 import thirdweb from './thirdweb.png';
 import mainBg from './ab-circle.png';
 import pProfile from './P-profile.svg';
+import bookStore from './bookstore.png';
+import todo from './Todo.png';
+import web3Hackathon from './web3-hackathon.png';
 
 export {
   tagType,
@@ -32,4 +35,7 @@ export {
   thirdweb,
   mainBg,
   pProfile,
+  bookStore,
+  todo,
+  web3Hackathon,
 };

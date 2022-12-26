@@ -3,14 +3,17 @@ import { MdDesktopMac } from 'react-icons/md';
 import { FaReact, FaPeopleArrows } from 'react-icons/fa';
 
 // Components
-import { Experties } from '../components';
+import { Experties, Project } from '../components';
+
+// Constants
+import { projects } from '../constants';
 
 // Assets
 import { pProfile } from '../assets';
 // import { reactIcon } from '../languages';
 
 const Home = () => (
-  <>
+  <div className=" grid gap-6 ">
     <div className=" grid md:grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 my-20 ">
       <div className="mt-12">
         <div className=" bg-green-200 w-fit rounded-lg">
@@ -36,7 +39,7 @@ const Home = () => (
       </div>
     </div>
     <div className="flex flex-col justify-center items-center my-20">
-      <h3 className="text-5xl underline font-epilogue text-white font-extrabold leading-4 my-8">My Experties</h3>
+      <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] bg-transparent text-5xl underline font-epilogue font-extrabold my-8">My Experties</h3>
       <div className="grid grid-cols-1 sm:gap-3 lg:gap-0 md:gap-0 md:grid-cols-2 lg:grid-cols-3">
         <Experties
           title="BackEnd Development"
@@ -64,7 +67,23 @@ const Home = () => (
         />
       </div>
     </div>
-  </>
+    <div className="flex flex-col justify-center items-center my-20">
+      <div className="flex flex-col items-center ">
+        <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] bg-transparent text-5xl underline font-epilogue font-extrabold my-1">My Projects</h3>
+        <span className="text-[#A3B3BC] text-xl font-epilogue my-1 block ">
+          Each project is unique. Here are some of my works.
+        </span>
+      </div>
+      <div className=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-2 pt-8  sm:mx-4">
+        {projects.map((project) => (
+          <Project
+            key={project.id}
+            project={project}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
 );
 
 export default Home;

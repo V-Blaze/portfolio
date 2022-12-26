@@ -1,8 +1,5 @@
 import React from 'react';
 
-// Sass
-// import './profile.css';
-
 // Icons
 import {
   cssIcon,
