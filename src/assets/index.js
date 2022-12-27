@@ -17,6 +17,8 @@ import pProfile from './P-profile.svg';
 import bookStore from './bookstore.png';
 import todo from './Todo.png';
 import web3Hackathon from './web3-hackathon.png';
+import metalunrLogo from './logo2x.png';
+import metalunrLogo2 from './METALUNR-METAVERSE-2.png';
 
 export {
   tagType,
@@ -38,4 +40,6 @@ export {
   bookStore,
   todo,
   web3Hackathon,
+  metalunrLogo,
+  metalunrLogo2,
 };

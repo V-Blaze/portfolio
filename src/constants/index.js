@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import {
-  createCampaign, dashboard, logout, payment, profile, withdraw, bookStore, todo, web3Hackathon, 
+  createCampaign, dashboard, logout, payment, profile, withdraw, bookStore, todo, web3Hackathon, metalunrLogo, metalunrLogo2,
 } from '../assets';
 
 export const navlinks = [
@@ -67,5 +67,30 @@ export const projects =[
     codeLink: '/',
     desc: 'A single-page React todo App with dynamic routing. simply add tasks to the UI.',
     stack: ['React', 'JavaScript', 'Redux', 'CSS']
+  }
+]
+
+export const experiences = [
+  {
+    id: 1,
+    name: 'Metalunr',
+    position: 'Web Developer @ Metalunr Canada',
+    location: 'Remote',
+    link: 'Metalunr.com',
+    jobDesc: 'Developed the UI and UX eco-system for a conference event platform using modular component structures with JS, SCSS, Gulp on Node.',
+    year: '2018 - 2020',
+    stack: ['React', 'JavaScript', 'CSS', 'Figma'],
+    logo: metalunrLogo,
+  },
+  {
+    id: 2,
+    name: 'Medic Impact',
+    position: 'Software Engineer @ Medic Impact Global Ltd',
+    location: 'Remote',
+    link: 'medicimpact.com',
+    jobDesc: 'Developing front-end and mobile app solutions (B2C, B2B) in Travel Tech on React/Next.js framework and Flutter SDK.',
+    year: '2018 - 2020',
+    stack: ['React', 'JavaScript', 'CSS', 'Figma'],
+    logo: metalunrLogo2,
   }
 ]

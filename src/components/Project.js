@@ -13,7 +13,7 @@ const Project = ({ project }) => {
   return (
     <div className="flex flex-col justify-between border-solid border-2 border-[#33354b] bg-[#171823] rounded-xl p-4 h-[460px] ">
       <div className="grid grid-cols-2 gap-6">
-        <img src={imgUrl} alt={name} className=" h-[250px] rounded-xl " />
+        <img src={imgUrl} alt={name} className=" h-[250px] rounded-xl w-full" />
         <div className="flex flex-col">
           <h3 className=" text-white text-3xl font-bold mb-4 ">{name}</h3>
           <span className="text-[#A3B3BC] text-normal font-epilogue my-3 block truncate">{desc}</span>
@@ -26,7 +26,6 @@ const Project = ({ project }) => {
         ))}
       </div>
       <div className="flex items-center justify-evenly ">
-        {/* <a href={liveLink}><button type="button">view live</button></a> */}
         <CustomButton
           btnType="button"
           title="View Live"
@@ -43,7 +42,6 @@ const Project = ({ project }) => {
             navigate(codeLink);
           }}
         />
-        {/* <a href={codeLink}><button type="button">source code</button></a> */}
       </div>
     </div>
   );
