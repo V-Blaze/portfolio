@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { MdDesktopMac } from 'react-icons/md';
-import { FaReact, FaPeopleArrows } from 'react-icons/fa';
+import {
+  FaReact, FaPeopleArrows, FaGithubSquare, FaTwitterSquare, FaSlack, FaLinkedin,
+} from 'react-icons/fa';
+import { BiMailSend } from 'react-icons/bi';
 
 // Components
 import { Experties, Project, CustomAccordion } from '../components';
@@ -108,6 +111,48 @@ const Home = () => {
             />
           ))}
         </div>
+      </div>
+      <div className="flex flex-col justify-center items-center mb-auto">
+        <div className="flex flex-col items-center jusify-center">
+          <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] bg-transparent text-5xl underline font-epilogue font-extrabold my-1">Connect With Me</h3>
+        </div>
+        <div className="flex flex-wrap w-full">
+          <a href="github.com" target="_blank" rel="noreferrer">
+            <div className="flex items-center justify-center cursor-pointer gap-4 h-20 bg-[#252629] text-white w-[100%] md:w-[50%] lg:w-[25%] text-3xl font-epilogue font-extrabold">
+              <p>Github</p>
+              <FaGithubSquare />
+            </div>
+          </a>
+          <a href="linkedin.com" target="_blank" rel="noreferrer">
+            <div className="flex items-center justify-center cursor-pointer gap-4 h-20 bg-[#015684] text-white w-[100%] md:w-[50%] lg:w-[25%] text-3xl font-epilogue font-extrabold">
+              <p>Linkedln</p>
+              <FaLinkedin />
+            </div>
+          </a>
+          <a href="twitter.com" target="_blank" rel="noreferrer">
+            <div className="flex items-center justify-center cursor-pointer gap-4 h-20 bg-[#1DA1F2] text-white w-[100%] md:w-[50%] lg:w-[25%] text-3xl font-epilogue font-extrabold">
+              <p>Twitter</p>
+              <FaTwitterSquare />
+            </div>
+          </a>
+          <a href="slack.com" target="_blank" rel="noreferrer">
+            <div className="flex items-center justify-center cursor-pointer gap-4 h-20 bg-[#398DFF] text-white w-[100%] md:w-[50%] lg:w-[25%] text-3xl font-epilogue font-extrabold">
+              <p>Slack</p>
+              <FaSlack />
+            </div>
+          </a>
+        </div>
+        <a href="mailto:valentine6586@gmail.com" target="_blank" rel="noreferrer">
+          <div className="flex justify-center items-center font-bold font-epilogue w-full bg-green-500 text-white h-12 gap-4 cursor-pointer ">
+            <span>
+              SHOOT ME A MAIL
+            </span>
+            <BiMailSend />
+          </div>
+        </a>
+      </div>
+      <div className=" flex justify-center items-center h-16 bg-[#171823 text-white font-extrabold ">
+        <span>© Copyright 2022, Valentine Blaze. All Rights Reserved.</span>
       </div>
     </div>
   );

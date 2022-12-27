@@ -18,13 +18,13 @@ const CustomAccordion = ({
           <span>{year}</span>
           <span className="ml-auto">{open !== (num + 1) ? '+' : '-'}</span>
         </AccordionHeader>
-        <AccordionBody className="bg-[#1f372b] rounded-xl my-4 px-3">
+        <AccordionBody className="bg-[#1f372b] rounded-xl my-4 px-3 ">
           <div className="grid grid-cols-1 md:grid-cols-5 items-center mb-4">
             <div className="flex justify-center md:order-1 ">
               <img src={logo} alt="thirdweb" className=" w-24 h-24 " />
             </div>
             <div className="col-span-4">
-              <div className="flex gap-6">
+              <div className="flex gap-6 flex-wrap">
                 <span className="flex items-center justify-center gap-2 text-[#A3B3Bc] my-2">
                   <FaMapMarkerAlt />
                   {location}
