@@ -19,6 +19,9 @@ import todo from './Todo.png';
 import web3Hackathon from './web3-hackathon.png';
 import metalunrLogo from './logo2x.png';
 import metalunrLogo2 from './METALUNR-METAVERSE-2.png';
+import Lcomputer from './L-computer.gif';
+import LrestApi from './L-rest-api.gif';
+import LvideoCon from './L-video-conference.gif';
 
 export {
   tagType,
@@ -42,4 +45,7 @@ export {
   web3Hackathon,
   metalunrLogo,
   metalunrLogo2,
+  Lcomputer,
+  LrestApi,
+  LvideoCon,
 };

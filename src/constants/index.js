@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import {
-  createCampaign, dashboard, logout, payment, profile, withdraw, bookStore, todo, web3Hackathon, metalunrLogo, metalunrLogo2,
+  createCampaign, dashboard, profile, withdraw, bookStore, todo, web3Hackathon, metalunrLogo, metalunrLogo2,
 } from '../assets';
 
 export const navlinks = [
@@ -11,33 +11,21 @@ export const navlinks = [
     link: '/',
   },
   {
-    name: 'campaign',
+    name: 'blog',
     imgUrl: createCampaign,
-    link: '/create-campaign',
+    link: '/blog',
   },
   {
-    name: 'payment',
-    imgUrl: payment,
-    link: '/',
-    disabled: true,
-  },
-  {
-    name: 'withdraw',
+    name: 'projects',
     imgUrl: withdraw,
-    link: '/',
+    link: '/projects',
     disabled: true,
   },
   {
     name: 'profile',
     imgUrl: profile,
     link: '/profile',
-  },
-  {
-    name: 'logout',
-    imgUrl: logout,
-    link: '/',
-    disabled: true,
-  },
+  }
 ];
 
 export const projects =[

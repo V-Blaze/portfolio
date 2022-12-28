@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { BsEmojiSunglasses } from 'react-icons/bs';
 import Icon from './Icon';
 
-import { logo, sun } from '../assets';
+import { logo } from '../assets';
 import { navlinks } from '../constants';
 
 const Sidebar = () => {
@@ -32,7 +33,7 @@ const Sidebar = () => {
           ))}
         </div>
 
-        <Icon styles="bg-[#1c1c24] shadow-secondary" imgUrl={sun} link={{}} isActive="" handleClick={() => {}} />
+        <BsEmojiSunglasses className="text-white text-2xl hover:scale-50 hover:cursor-wait " />
       </div>
     </div>
   );

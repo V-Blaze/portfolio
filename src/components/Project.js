@@ -17,7 +17,7 @@ const Project = ({ project }) => {
         <div className="flex flex-col">
           <h3 className=" text-white text-3xl font-bold mb-4 ">{name}</h3>
           <span className="text-[#A3B3BC] text-normal font-epilogue my-3 block truncate">{desc}</span>
-          <button type="button" id={id} className=" border-none bg-transparent text-white self-center underline">Preview</button>
+          <button type="button" id={id} className=" border-none bg-transparent text-white self-center underline">Details</button>
         </div>
       </div>
       <div className=" flex justify-around my-4">
