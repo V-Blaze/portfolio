@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import {
-  createCampaign, dashboard, profile, withdraw, bookStore, todo, web3Hackathon, metalunrLogo, medicImpact, microverse,
+  createCampaign, dashboard, profile, withdraw, bookStore, web3Hackathon, metalunrLogo, medicImpact, microverse, foodHub, spaceHub,
 } from '../assets';
 
 export const navlinks = [
@@ -49,12 +49,21 @@ export const projects =[
   },
   {
     id: 3,
-    name: 'Todo App',
-    imgUrl: todo,
-    liveLink: 'https://github.com/V-Blaze/react-to-do-app',
-    codeLink: 'https://github.com/V-Blaze/react-to-do-app',
-    desc: 'A single-page React todo App with dynamic routing. simply add tasks to the UI.',
+    name: 'FoodHub',
+    imgUrl: foodHub,
+    liveLink: 'https://v-blaze.github.io/FOODHUB/dist/',
+    codeLink: 'https://github.com/V-Blaze/FOODHUB',
+    desc: 'This is a JavaScript meal app built with a crowd-sourced database of Recipes from around the world.',
     stack: ['React', 'JavaScript', 'Redux', 'CSS', 'Jest']
+  },
+  {
+    id: 4,
+    name: 'SPACE TRAVELERS HUB',
+    imgUrl: spaceHub,
+    liveLink: 'https://space-travelers-hub-astn.onrender.com/',
+    codeLink: 'https://github.com/KIsmoilov/Space-Traveler-s-Hub',
+    desc: 'This is a React WebApp with the real live data from the SpaceX API. The application will allow users to book rockets and join selected space missions. Built with JavaScript, ReactJS, Redux and CSS3',
+    stack: ['React', 'JavaScript', 'Redux', 'CSS', 'Jest', 'Redux-toolkit']
   }
 ]
 

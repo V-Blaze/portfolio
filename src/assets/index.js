@@ -16,6 +16,8 @@ import mainBg from './ab-circle.png';
 import pProfile from './P-profile.svg';
 import bookStore from './bookstore.png';
 import todo from './Todo.png';
+import foodHub from './foodhub.jpeg';
+import spaceHub from './space-travelers__rockets.png';
 import web3Hackathon from './web3-hackathon.png';
 import metalunrLogo from './logo2x.png';
 import medicImpact from './Medic-impact.jpg';
@@ -50,4 +52,6 @@ export {
   Lcomputer,
   LrestApi,
   LvideoCon,
+  foodHub,
+  spaceHub,
 };
