@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useNavigate } from 'react-router-dom';
 
 import CustomButton from './CustomButton';
 
 const Project = ({ project }) => {
-  const navigate = useNavigate();
+  const openInNewTab = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
   const {
     id, name, imgUrl, liveLink, codeLink, desc, stack,
   } = project;
@@ -17,7 +18,7 @@ const Project = ({ project }) => {
         <div className="flex flex-col">
           <h3 className=" text-white text-3xl font-bold mb-4 ">{name}</h3>
           <span className="text-[#A3B3BC] text-normal font-epilogue my-3 block truncate">{desc}</span>
-          <button type="button" id={id} className=" border-none bg-transparent text-white self-center underline">Preview</button>
+          <button type="button" id={id} className=" border-none bg-transparent text-white self-center underline">Details</button>
         </div>
       </div>
       <div className=" flex justify-around my-4">
@@ -31,7 +32,7 @@ const Project = ({ project }) => {
           title="View Live"
           styles="bg-[#1dc071]"
           handleClick={() => {
-            navigate(liveLink);
+            openInNewTab(liveLink);
           }}
         />
         <CustomButton
@@ -39,7 +40,7 @@ const Project = ({ project }) => {
           title="Source Code"
           styles="bg-[#1dc071]"
           handleClick={() => {
-            navigate(codeLink);
+            openInNewTab(codeLink);
           }}
         />
       </div>

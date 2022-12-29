@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { BsEmojiSunglasses } from 'react-icons/bs';
 import Icon from './Icon';
 
-import { logo, sun } from '../assets';
+import { logo } from '../assets';
 import { navlinks } from '../constants';
 
 const Sidebar = () => {
@@ -11,10 +12,10 @@ const Sidebar = () => {
 
   return (
     <div className="flex justify-between items-center flex-col sticky top-5 h-[93vh]">
-      <Link to="/">
-        <Icon styles="w-[52px] h-[52px] bg-[#2c2f32]" imgUrl={logo} link={{}} isActive="" handleClick={() => {}} />
-      </Link>
-
+      {/* <Link to="metalunr.com">
+        <Icon imgUrl={logo} link={{}} isActive="" handleClick={() => {}} />
+      </Link> */}
+      <img src={logo} alt="logo" className="w-[52px] h-[52px] bg-[#2c2f32] rounded-full hover:cursor-pointer" />
       <div className="flex-1 flex flex-col justify-between items-center bg-[#1c1c24] rounded-[20px] w-[76px] py-4 mt-12">
         <div className="flex flex-col justify-center items-center gap-3">
           {navlinks.map((link) => (
@@ -32,7 +33,7 @@ const Sidebar = () => {
           ))}
         </div>
 
-        <Icon styles="bg-[#1c1c24] shadow-secondary" imgUrl={sun} link={{}} isActive="" handleClick={() => {}} />
+        <BsEmojiSunglasses className="text-white text-2xl hover:scale-50 hover:cursor-wait " />
       </div>
     </div>
   );

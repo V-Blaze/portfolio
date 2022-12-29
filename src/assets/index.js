@@ -1,6 +1,6 @@
 import createCampaign from './create-campaign.svg';
 import dashboard from './dashboard.svg';
-import logo from './logo.svg';
+import logo from './Logo.png';
 import logout from './logout.svg';
 import payment from './payment.svg';
 import profile from './profile.svg';
@@ -18,7 +18,11 @@ import bookStore from './bookstore.png';
 import todo from './Todo.png';
 import web3Hackathon from './web3-hackathon.png';
 import metalunrLogo from './logo2x.png';
-import metalunrLogo2 from './METALUNR-METAVERSE-2.png';
+import medicImpact from './Medic-impact.jpg';
+import microverse from './Microverse.webp';
+import Lcomputer from './L-computer.gif';
+import LrestApi from './L-rest-api.gif';
+import LvideoCon from './L-video-conference.gif';
 
 export {
   tagType,
@@ -41,5 +45,9 @@ export {
   todo,
   web3Hackathon,
   metalunrLogo,
-  metalunrLogo2,
+  medicImpact,
+  microverse,
+  Lcomputer,
+  LrestApi,
+  LvideoCon,
 };
