@@ -36,12 +36,16 @@ const Home = () => {
     visible: { staggerChildren: 0.3 },
   };
 
+  const openInNewTab = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <div className=" grid gap-6 ">
       <CustomParticles />
-      <div className=" grid md:grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 my-20 ">
+      <div className=" grid md:grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 my-0 lg:my-20 ">
         <motion.div
-          className="mt-12"
+          className="mt-0 lg:mt-12"
         >
           <motion.div
             className=" bg-green-200 w-fit rounded-lg"
@@ -89,7 +93,7 @@ const Home = () => {
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.9 }}
             variants={{
-              hidden: { opacity: 0, x: -200, y: -150 },
+              hidden: { opacity: 0, x: -50, y: -150 },
               visible: { opacity: 1, x: 0, y: 0 },
             }}
           >
@@ -116,7 +120,7 @@ const Home = () => {
       <div className="flex flex-col justify-center items-center my-20">
         <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] bg-transparent text-5xl underline font-epilogue font-extrabold my-8">Experties</h3>
         <motion.div
-          className="grid grid-cols-1 sm:gap-3 lg:gap-0 md:gap-0 md:grid-cols-2 lg:grid-cols-3"
+          className="grid grid-cols-1 sm:gap-3 lg:gap-0 md:gap-0 md:grid-cols-1 lg:grid-cols-3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.5 }}
@@ -127,7 +131,7 @@ const Home = () => {
             Icon={LrestApi}
             desc="
           Experienced in both functional and OOP: Ruby, Rails, Ruby on Rails, Node,
-          JavaScript, TypeScript.
+          JavaScript, TypeScript, Web3.Js Solidity, Blockchain, Jest.
           "
           />
           <Experties
@@ -166,7 +170,7 @@ const Home = () => {
       </div>
       <div className="flex flex-col justify-center items-center my-20">
         <div className="flex flex-col items-center jusify-center">
-          <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] bg-transparent text-5xl underline font-epilogue font-extrabold my-1">Professional Experience</h3>
+          <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] bg-transparent text-5xl underline font-epilogue font-extrabold my-1">Professional Experiences</h3>
         </div>
         <div className="h-fit">
           {experiences.map((experience, i) => (
@@ -186,24 +190,52 @@ const Home = () => {
           <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] bg-transparent text-5xl underline font-epilogue font-extrabold my-1">Connect With Me</h3>
         </div>
         <div className="flex flex-wrap w-full">
-          <a href="github.com" target="_blank" rel="noreferrer" className="flex items-center justify-center cursor-pointer gap-4 h-20 bg-[#252629] text-white w-[100%] md:w-[50%] lg:w-[25%] text-3xl font-epilogue font-extrabold">
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              openInNewTab('https://github.com/V-Blaze');
+            }}
+            type="button"
+            className="flex items-center justify-center cursor-pointer gap-4 h-20 bg-[#252629] text-white w-[100%] md:w-[50%] lg:w-[25%] text-3xl font-epilogue font-extrabold hover:translate-y-[-1rem]"
+          >
             <p>Github</p>
             <FaGithubSquare />
-          </a>
-          <a href="linkedin.com" target="_blank" rel="noreferrer" className="flex items-center justify-center cursor-pointer gap-4 h-20 bg-[#015684] text-white w-[100%] md:w-[50%] lg:w-[25%] text-3xl font-epilogue font-extrabold">
+          </button>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              openInNewTab('https://www.linkedin.com/in/valentine-blaze/');
+            }}
+            type="button"
+            className="flex items-center justify-center cursor-pointer gap-4 h-20 bg-[#015684] text-white w-[100%] md:w-[50%] lg:w-[25%] text-3xl font-epilogue font-extrabold hover:translate-y-[1rem]"
+          >
             <p>Linkedln</p>
             <FaLinkedin />
-          </a>
-          <a href="twitter.com" target="_blank" rel="noreferrer" className="flex items-center justify-center cursor-pointer gap-4 h-20 bg-[#1DA1F2] text-white w-[100%] md:w-[50%] lg:w-[25%] text-3xl font-epilogue font-extrabold">
+          </button>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              openInNewTab('https://twitter.com/blaze_valentine');
+            }}
+            type="button"
+            className="flex items-center justify-center cursor-pointer gap-4 h-20 bg-[#1DA1F2] text-white w-[100%] md:w-[50%] lg:w-[25%] text-3xl font-epilogue font-extrabold hover:translate-y-[-1rem] "
+          >
             <p>Twitter</p>
             <FaTwitterSquare />
-          </a>
-          <a href="slack.com" target="_blank" rel="noreferrer" className="flex items-center justify-center cursor-pointer gap-4 h-20 bg-[#398DFF] text-white w-[100%] md:w-[50%] lg:w-[25%] text-3xl font-epilogue font-extrabold">
+          </button>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              openInNewTab('https://slack.com');
+            }}
+            type="button"
+            className="flex items-center justify-center cursor-pointer gap-4 h-20 bg-[#398DFF] text-white w-[100%] md:w-[50%] lg:w-[25%] text-3xl font-epilogue font-extrabold hover:translate-y-[1rem]"
+          >
             <p>Slack</p>
             <FaSlack />
-          </a>
+          </button>
         </div>
-        <a href="mailto:valentine6586@gmail.com" target="_blank" rel="noreferrer" className="flex justify-center items-center font-bold font-epilogue w-full bg-green-500 text-white h-12 gap-4 cursor-pointer ">
+        <a href="mailto:valentine6586@gmail.com" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center font-bold font-epilogue w-full bg-green-500 text-white h-12 gap-4 cursor-pointer ">
           <span>
             SHOOT ME A MAIL
           </span>

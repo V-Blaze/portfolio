@@ -5,8 +5,9 @@ import { Routes, Route } from 'react-router-dom';
 import { Navbar, Sidebar } from './components';
 
 // Pages
-import { Blog, Home } from './pages';
+import { Blog, Home, Projects } from './pages';
 // import './App.css';
+import 'animate.css';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </div>
     </div>

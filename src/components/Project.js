@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useNavigate } from 'react-router-dom';
 
 import CustomButton from './CustomButton';
 
 const Project = ({ project }) => {
-  const navigate = useNavigate();
+  const openInNewTab = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
   const {
     id, name, imgUrl, liveLink, codeLink, desc, stack,
   } = project;
@@ -31,7 +32,7 @@ const Project = ({ project }) => {
           title="View Live"
           styles="bg-[#1dc071]"
           handleClick={() => {
-            navigate(liveLink);
+            openInNewTab(liveLink);
           }}
         />
         <CustomButton
@@ -39,7 +40,7 @@ const Project = ({ project }) => {
           title="Source Code"
           styles="bg-[#1dc071]"
           handleClick={() => {
-            navigate(codeLink);
+            openInNewTab(codeLink);
           }}
         />
       </div>

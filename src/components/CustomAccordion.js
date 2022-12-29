@@ -10,15 +10,19 @@ const CustomAccordion = ({
     position, location, link, jobDesc, stack, logo, year,
   } = experience;
 
+  const openInNewTab = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <>
-      <Accordion open={open === (num + 1)} animate={customAnimation}>
+      <Accordion open={open === (num + 1)} animate={customAnimation} className="my-4">
         <AccordionHeader onClick={() => { handleOpenProp((num + 1)); }} className=" flex items-center justify-between text-[0.75rem] text-white bg-[#1DC071] w-full rounded-xl px-2 m-auto">
           <span className="w-[75%] mr-auto">{position}</span>
           <span>{year}</span>
           <span className="ml-auto">{open !== (num + 1) ? '+' : '-'}</span>
         </AccordionHeader>
-        <AccordionBody className="bg-[#1f372b] rounded-xl my-4 px-3 ">
+        <AccordionBody className="bg-[#1f372b] rounded-xl my-3 px-3 ">
           <div className="grid grid-cols-1 md:grid-cols-5 items-center mb-4">
             <div className="flex justify-center md:order-1 ">
               <img src={logo} alt="thirdweb" className=" w-24 h-24 " />
@@ -31,7 +35,8 @@ const CustomAccordion = ({
                 </span>
                 <span className="flex items-center justify-center gap-2 text-[#A3B3Bc] my-2">
                   <FaLink />
-                  <a href={link} target="_blank" rel="noreferrer">{link}</a>
+                  {/* <a href={link} target="_blank" rel="noreferrer">{link}</a> */}
+                  <button type="button" onClick={() => openInNewTab(link)}>{link}</button>
                 </span>
               </div>
               <div>
@@ -39,7 +44,7 @@ const CustomAccordion = ({
                   {jobDesc}
                 </span>
               </div>
-              <div className=" my-4 flex justify-around">
+              <div className=" my-4 flex flex-wrap justify-around">
                 {stack.map((item) => (
                   <span key={item} className="text-[#fff] border-[#fff] border-2 border-solid px-2 w-fit rounded-lg bg-gray-700 ">{item}</span>
                 ))}
