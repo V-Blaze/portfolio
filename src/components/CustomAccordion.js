@@ -44,7 +44,7 @@ const CustomAccordion = ({
                   {jobDesc}
                 </span>
               </div>
-              <div className=" my-4 flex flex-wrap justify-around">
+              <div className=" my-4 flex flex-wrap justify-around gap-2">
                 {stack.map((item) => (
                   <span key={item} className="text-[#fff] border-[#fff] border-2 border-solid px-2 w-fit rounded-lg bg-gray-700 ">{item}</span>
                 ))}

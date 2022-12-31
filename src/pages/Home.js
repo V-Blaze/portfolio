@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-// import { MdDesktopMac } from 'react-icons/md';
 import {
   FaGithubSquare, FaTwitterSquare, FaSlack, FaLinkedin,
 } from 'react-icons/fa';
 import { BiMailSend } from 'react-icons/bi';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-// import { Blob } from 'react-interactive-blob';
 
 // Components
 import {
@@ -54,7 +52,7 @@ const Home = () => {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, x: -200, y: 100 },
+              hidden: { opacity: 0, x: -80, y: 70 },
               visible: { opacity: 1, x: 0, y: 0 },
             }}
           >
