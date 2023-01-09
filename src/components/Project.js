@@ -26,7 +26,7 @@ const Project = ({ project }) => {
           <span key={item} className="text-[#fff] border-[#fff] border-2 border-solid px-2 w-fit rounded-lg bg-gray-700  ">{item}</span>
         ))}
       </div>
-      <div className="flex items-center justify-evenly ">
+      <div className="flex items-center justify-evenly gap-2">
         <CustomButton
           btnType="button"
           title="View Live"
