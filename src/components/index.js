@@ -5,3 +5,4 @@ export { default as Experties } from './Experties';
 export { default as Project } from './Project';
 export { default as CustomAccordion } from './CustomAccordion';
 export { default as CustomParticles } from './CustomParticles';
+export { default as BlogPost } from './BlogPost';

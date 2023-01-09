@@ -1,16 +1,26 @@
 import React from 'react';
-import { TypeAnimation } from 'react-type-animation';
+import { BlogPost } from '../components';
+import { blogPosts } from '../constants';
 
-const Blog = () => (
-  <TypeAnimation
-    // Same String at the start will only be typed once, initially
-    sequence={['Blog Coming Soon !!!', 2000, 'Check back Later !!!', 2000]}
-    speed={50} // Custom Speed from 1-99 - Default Speed: 40
-              // style={{ fontSize: '2em' }}
-    className=" min-w-full m-h-full text-white font-epilogue font-extrabold flex items-center justify-center "
-    wrapper="div" // Animation will be rendered as a <span>
-    repeat={Infinity}
-  />
-);
+const Blog = () => {
+  const openInNewTab = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+  return (
+    <div className="bg-white min-h-screen rounded-xl flex items-center flex-col">
+      <h2 className="text-2xl font-bold font-epilogue mt-4">Recent Posts</h2>
+      <hr className="bg-black w-full border-2" />
+      <div className="">
+        {blogPosts.map((post) => (
+          <BlogPost
+            key={post.id}
+            post={post}
+            openInNewTab={openInNewTab}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default Blog;

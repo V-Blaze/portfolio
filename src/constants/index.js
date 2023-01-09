@@ -102,3 +102,15 @@ export const experiences = [
     logo: microverse,
   }
 ]
+
+export const blogPosts = [
+  {
+    id: 1,
+    title: 'What has been the biggest challenge that I faced so far in My journey with software development?',
+    slug: 'Drifting in an endless space of tutorials and no clear direction to my destination is a deadlock I never knew I will get myself out of one day. Being a self-taught developer before joining Microverse, the two biggest challenges I have faced so far are The tutorial hell trap and shiny object syndrome...',
+    date: 'Dec 16, 2022',
+    readTime: '2 min read',
+    imageUrl: 'https://miro.medium.com/max/828/1*kcgdlmbz6RSfbvQqlAisCg.webp',
+    link: 'https://medium.com/@V-Blaze/what-has-been-the-biggest-challenge-that-you-have-faced-so-far-in-your-journey-with-software-397a2f668b9c',
+  }
+]
