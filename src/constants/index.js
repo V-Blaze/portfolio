@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import {
-  createCampaign, dashboard, profile, withdraw, bookStore, web3Hackathon, metalunrLogo, medicImpact, microverse, foodHub, spaceHub,
+  createCampaign, dashboard, profile, withdraw, bookStore, web3Hackathon, metalunrLogo, medicImpact, microverse, foodHub, spaceHub, cryptoPedia,
 } from '../assets';
 
 export const navlinks = [
@@ -31,12 +31,12 @@ export const navlinks = [
 export const projects =[
   {
     id: 1,
-    name: 'BookStore App',
-    imgUrl: bookStore,
-    liveLink: 'https://bookstore-nsxm.onrender.com',
-    codeLink: 'https://github.com/V-Blaze/Bookstore',
-    desc: 'A bookstore WebApp that Displays a list of books. And users can Add a book or remove a selected book.',
-    stack: ['React', 'JavaScript', 'Redux', 'CSS', 'API']
+    name: 'CryptoPedia',
+    imgUrl: cryptoPedia,
+    liveLink: 'https://cryptopedia.onrender.com/',
+    codeLink: 'https://github.com/V-Blaze/cryptopedia',
+    desc: 'Cryptopedia is a Web-App for real-time data about crypto exchanges and market activity for over 75 cryptocurrencies exchanges around the World. Users can see Exchanges categorized by their country and also get to see different informations like Trading volumes, trading pairs and ranks.',
+    stack: ['React', 'JavaScript', 'Redux', 'CSS', 'Jest', 'Tailwind']
   },
   {
     id: 2,
@@ -64,7 +64,17 @@ export const projects =[
     codeLink: 'https://github.com/KIsmoilov/Space-Traveler-s-Hub',
     desc: 'This is a React WebApp with the real live data from the SpaceX API. The application will allow users to book rockets and join selected space missions. Built with JavaScript, ReactJS, Redux and CSS3',
     stack: ['React', 'JavaScript', 'Redux', 'CSS', 'Jest', 'Redux-toolkit']
-  }
+  },
+  {
+    id: 5,
+    name: 'BookStore App',
+    imgUrl: bookStore,
+    liveLink: 'https://bookstore-nsxm.onrender.com',
+    codeLink: 'https://github.com/V-Blaze/Bookstore',
+    desc: 'A bookstore WebApp that Displays a list of books. And users can Add a book or remove a selected book.',
+    stack: ['React', 'JavaScript', 'Redux', 'CSS', 'API']
+  },
+
 ]
 
 export const experiences = [

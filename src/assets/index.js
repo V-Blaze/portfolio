@@ -16,7 +16,8 @@ import mainBg from './ab-circle.png';
 import pProfile from './P-profile.svg';
 import bookStore from './bookstore.png';
 import todo from './Todo.png';
-import foodHub from './foodhub.jpeg';
+import foodHub from './foodhub.png';
+import cryptoPedia from './cryptoPedia.png';
 import spaceHub from './space-travelers__rockets.png';
 import web3Hackathon from './web3-hackathon.png';
 import metalunrLogo from './logo2x.png';
@@ -54,4 +55,5 @@ export {
   LvideoCon,
   foodHub,
   spaceHub,
+  cryptoPedia,
 };

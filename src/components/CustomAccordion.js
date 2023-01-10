@@ -22,7 +22,7 @@ const CustomAccordion = ({
           <span>{year}</span>
           <span className="ml-auto">{open !== (num + 1) ? '+' : '-'}</span>
         </AccordionHeader>
-        <AccordionBody className="bg-[#1f372b] rounded-xl my-3 px-3 ">
+        <AccordionBody className="bg-[#1f372b] rounded-xl my-3 px-3 min-h-full">
           <div className="grid grid-cols-1 md:grid-cols-5 items-center mb-4">
             <div className="flex justify-center md:order-1 ">
               <img src={logo} alt="thirdweb" className=" w-24 h-24 " />
