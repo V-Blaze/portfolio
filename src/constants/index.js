@@ -109,5 +109,16 @@ export const experiences = [
     year: '2022 - Present',
     stack: ['Code Review', 'Git BASH', 'Pair Programming', 'Ruby on Rails', 'Jest', 'TypeScript', 'React.js'],
     logo: microverse,
+  },
+  {
+    id: 4,
+    name: 'Microverse',
+    position: 'Code Reviewer @ Microverse Inc.',
+    location: 'UK · Remote',
+    link: 'https://Microverse.com',
+    jobDesc: ' Provided quality reviews on 500+ technical projects improving the quality of source code submitted to the program by 50% - Mentored 50+ junior developers on coding and UI/UX best practices, improving the technical level of developers completing the program and reducing completion time by 25%',
+    year: '2023 - Present',
+    stack: ['Code Review', 'Git BASH', 'Pair Programming', 'Ruby on Rails', 'Jest', 'TypeScript', 'React.js'],
+    logo: microverse,
   }
 ]
