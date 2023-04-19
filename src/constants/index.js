@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import {
-  createCampaign, dashboard, profile, withdraw, bookStore, web3Hackathon, metalunrLogo, medicImpact, microverse, foodHub, spaceHub, cryptoPedia, gvashPlanes
+  createCampaign, dashboard, profile, withdraw, bookStore, web3Hackathon, metalunrLogo, medicImpact, microverse, foodHub, spaceHub, cryptoPedia, gvashPlanes, prop44,
 } from '../assets';
 
 export const navlinks = [
@@ -130,6 +130,17 @@ export const experiences = [
     year: '2023 - Present',
     stack: ['Code Review', 'Git BASH', 'Pair Programming', 'Ruby on Rails', 'Jest', 'TypeScript', 'React.js'],
     logo: microverse,
+  },
+  {
+    id: 5,
+    name: 'Prop 44',
+    position: 'Full Stack Engineer @ Prop 44',
+    location: 'Chennai India · Remote',
+    link: 'https://prop44.com/',
+    jobDesc: 'Design, build and evolve durable, highly scalable event-driven infrastructure. - Provide expertise and establish best practices on the development, monitoring, and maintenance of event-based technologies. - Research and implement cutting-edge technology that can be applied to handle massive scales ',
+    year: '2023 - Present',
+    stack: ['Git BASH', 'Node', 'Firebase', 'Jest', 'TypeScript', 'React.js'],
+    logo: prop44,
   }
 ]
 
@@ -142,5 +153,14 @@ export const blogPosts = [
     readTime: '2 min read',
     imageUrl: 'https://miro.medium.com/max/828/1*kcgdlmbz6RSfbvQqlAisCg.webp',
     link: 'https://medium.com/@V-Blaze/what-has-been-the-biggest-challenge-that-you-have-faced-so-far-in-your-journey-with-software-397a2f668b9c',
+  },
+  {
+    id: 2,
+    title: 'How to use React in Ruby on Rails App.',
+    slug: 'Rails is still a very widely used framework but many people still prefer to use JavaScript frameworks for front-end features. As such, integrating React into your Rails project can have several benefits, some less obvious than others. One reason you might want a React front-end could be for compatibility...',
+    date: 'Apr 11, 2023',
+    readTime: '4 min read',
+    imageUrl: 'https://miro.medium.com/v2/resize:fit:828/format:webp/1*S6nOFT8jX3h3aJ3I5gVpLQ.png',
+    link: 'https://medium.com/@V-Blaze/how-to-use-react-in-ruby-on-rails-app-610b8fca41db',
   }
 ]

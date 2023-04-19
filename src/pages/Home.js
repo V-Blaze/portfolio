@@ -240,7 +240,7 @@ const Home = () => {
         </a>
       </div>
       <div className=" flex justify-center items-center h-16 bg-[#171823 text-white font-extrabold ">
-        <span>© Copyright 2022, Valentine Blaze. All Rights Reserved.</span>
+        <span>© Copyright 2019 - 2023, Valentine Blaze. All Rights Reserved.</span>
       </div>
     </div>
   );

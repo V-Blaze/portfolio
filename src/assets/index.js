@@ -27,6 +27,7 @@ import microverse from './Microverse.webp';
 import Lcomputer from './L-computer.gif';
 import LrestApi from './L-rest-api.gif';
 import LvideoCon from './L-video-conference.gif';
+import prop44 from './prop-44.png';
 
 export {
   tagType,
@@ -58,4 +59,5 @@ export {
   spaceHub,
   gvashPlanes,
   cryptoPedia,
+  prop44,
 };
