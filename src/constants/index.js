@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import {
-  createCampaign, dashboard, profile, withdraw, bookStore, web3Hackathon, metalunrLogo, medicImpact, microverse, foodHub, spaceHub, gvashPlanes,
+  createCampaign, dashboard, profile, withdraw, bookStore, web3Hackathon, metalunrLogo, medicImpact, microverse, foodHub, spaceHub, cryptoPedia, gvashPlanes
 } from '../assets';
 
 export const navlinks = [
@@ -31,12 +31,12 @@ export const navlinks = [
 export const projects =[
   {
     id: 1,
-    name: 'BookStore App',
-    imgUrl: bookStore,
-    liveLink: 'https://bookstore-nsxm.onrender.com',
-    codeLink: 'https://github.com/V-Blaze/Bookstore',
-    desc: 'A bookstore WebApp that Displays a list of books. And users can Add a book or remove a selected book.',
-    stack: ['React', 'JavaScript', 'Redux', 'CSS', 'API']
+    name: 'CryptoPedia',
+    imgUrl: cryptoPedia,
+    liveLink: 'https://cryptopedia.onrender.com/',
+    codeLink: 'https://github.com/V-Blaze/cryptopedia',
+    desc: 'Cryptopedia is a Web-App for real-time data about crypto exchanges and market activity for over 75 cryptocurrencies exchanges around the World. Users can see Exchanges categorized by their country and also get to see different informations like Trading volumes, trading pairs and ranks.',
+    stack: ['React', 'JavaScript', 'Redux', 'CSS', 'Jest', 'Tailwind']
   },
   {
     id: 2,
@@ -73,7 +73,17 @@ export const projects =[
     codeLink: 'https://github.com/V-Blaze/GVASH-PLANES-API',
     desc: 'GVASH PLANES is a Web-App where users can visit the home page, browse through the list of available planes, and make reservations for a given time period. ',
     stack: ['Rails', 'Postgres', 'Ruby', 'React', 'TalwindCSS', 'Redux-toolkit']
-  }
+  },
+  {
+    id: 6,
+    name: 'BookStore App',
+    imgUrl: bookStore,
+    liveLink: 'https://bookstore-nsxm.onrender.com',
+    codeLink: 'https://github.com/V-Blaze/Bookstore',
+    desc: 'A bookstore WebApp that Displays a list of books. And users can Add a book or remove a selected book.',
+    stack: ['React', 'JavaScript', 'Redux', 'CSS', 'API']
+  },
+
 ]
 
 export const experiences = [
@@ -120,5 +130,17 @@ export const experiences = [
     year: '2023 - Present',
     stack: ['Code Review', 'Git BASH', 'Pair Programming', 'Ruby on Rails', 'Jest', 'TypeScript', 'React.js'],
     logo: microverse,
+  }
+]
+
+export const blogPosts = [
+  {
+    id: 1,
+    title: 'What has been the biggest challenge that I faced so far in My journey with software development?',
+    slug: 'Drifting in an endless space of tutorials and no clear direction to my destination is a deadlock I never knew I will get myself out of one day. Being a self-taught developer before joining Microverse, the two biggest challenges I have faced so far are The tutorial hell trap and shiny object syndrome...',
+    date: 'Dec 16, 2022',
+    readTime: '2 min read',
+    imageUrl: 'https://miro.medium.com/max/828/1*kcgdlmbz6RSfbvQqlAisCg.webp',
+    link: 'https://medium.com/@V-Blaze/what-has-been-the-biggest-challenge-that-you-have-faced-so-far-in-your-journey-with-software-397a2f668b9c',
   }
 ]

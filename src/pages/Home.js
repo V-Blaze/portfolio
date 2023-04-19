@@ -156,7 +156,7 @@ const Home = () => {
             Each project is unique. Here are some of my works.
           </span>
         </div>
-        <div className=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-2 pt-8  sm:mx-4">
+        <div className=" grid grid-cols-1 gap-8 lg:gap-2 pt-8  sm:mx-4">
           {projects.map((project) => (
             <Project
               key={project.id}
