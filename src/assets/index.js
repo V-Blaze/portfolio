@@ -19,6 +19,7 @@ import todo from './Todo.png';
 import foodHub from './foodhub.jpeg';
 import spaceHub from './space-travelers__rockets.png';
 import web3Hackathon from './web3-hackathon.png';
+import gvashPlanes from './GVASH-PLANES.png';
 import metalunrLogo from './logo2x.png';
 import medicImpact from './Medic-impact.jpg';
 import microverse from './Microverse.webp';
@@ -54,4 +55,5 @@ export {
   LvideoCon,
   foodHub,
   spaceHub,
+  gvashPlanes,
 };

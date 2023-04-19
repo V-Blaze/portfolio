@@ -95,7 +95,7 @@ const Home = () => {
               visible: { opacity: 1, x: 0, y: 0 },
             }}
           >
-            I am a software engineer with more than four years of experience. recognized
+            I am a software engineer with more than four years of experience. Recognized
             as a practical and effective developer, experienced in leading cross-functional
             teams in a time-pressured setting to complete projects on schedule and within budget.
           </motion.span>
@@ -113,7 +113,6 @@ const Home = () => {
         >
           <img src={pProfile} alt="profile" />
         </motion.div>
-        {/* <Blob height={500} radius={150} className=" top-0 left-0 relative z-0" /> */}
       </div>
       <div className="flex flex-col justify-center items-center my-20">
         <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] bg-transparent text-5xl underline font-epilogue font-extrabold my-8">Experties</h3>
@@ -213,7 +212,7 @@ const Home = () => {
           <button
             onClick={(e) => {
               e.preventDefault();
-              openInNewTab('https://twitter.com/blaze_valentine');
+              openInNewTab('https://twitter.com/val__blaze');
             }}
             type="button"
             className="flex items-center justify-center cursor-pointer gap-4 h-20 bg-[#1DA1F2] text-white w-[100%] md:w-[50%] lg:w-[25%] text-3xl font-epilogue font-extrabold hover:translate-y-[-1rem] "

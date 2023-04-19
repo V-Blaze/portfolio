@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import {
-  createCampaign, dashboard, profile, withdraw, bookStore, web3Hackathon, metalunrLogo, medicImpact, microverse, foodHub, spaceHub,
+  createCampaign, dashboard, profile, withdraw, bookStore, web3Hackathon, metalunrLogo, medicImpact, microverse, foodHub, spaceHub, gvashPlanes,
 } from '../assets';
 
 export const navlinks = [
@@ -64,6 +64,15 @@ export const projects =[
     codeLink: 'https://github.com/KIsmoilov/Space-Traveler-s-Hub',
     desc: 'This is a React WebApp with the real live data from the SpaceX API. The application will allow users to book rockets and join selected space missions. Built with JavaScript, ReactJS, Redux and CSS3',
     stack: ['React', 'JavaScript', 'Redux', 'CSS', 'Jest', 'Redux-toolkit']
+  },
+  {
+    id: 5,
+    name: 'GVASH PLANES',
+    imgUrl: gvashPlanes,
+    liveLink: 'https://gvash-planes.vercel.app/',
+    codeLink: 'https://github.com/V-Blaze/GVASH-PLANES-API',
+    desc: 'GVASH PLANES is a Web-App where users can visit the home page, browse through the list of available planes, and make reservations for a given time period. ',
+    stack: ['Rails', 'Postgres', 'Ruby', 'React', 'TalwindCSS', 'Redux-toolkit']
   }
 ]
 
