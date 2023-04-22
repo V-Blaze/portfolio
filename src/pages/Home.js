@@ -8,7 +8,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 // Components
 import {
-  Experties, Project, CustomAccordion, CustomParticles,
+  Expertise, Project, CustomAccordion, CustomParticles,
 } from '../components';
 // Constants
 import { projects, experiences } from '../constants';
@@ -115,7 +115,7 @@ const Home = () => {
         </motion.div>
       </div>
       <div className="flex flex-col justify-center items-center my-20">
-        <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] bg-transparent text-5xl underline font-epilogue font-extrabold my-8">Experties</h3>
+        <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] bg-transparent text-5xl underline font-epilogue font-extrabold my-8">Expertise</h3>
         <motion.div
           className="grid grid-cols-1 sm:gap-3 lg:gap-0 md:gap-0 md:grid-cols-1 lg:grid-cols-3"
           initial="hidden"
@@ -123,7 +123,7 @@ const Home = () => {
           viewport={{ once: false, amount: 0.5 }}
           variants={container}
         >
-          <Experties
+          <Expertise
             title="BackEnd Development"
             Icon={LrestApi}
             desc="
@@ -131,7 +131,7 @@ const Home = () => {
           JavaScript, TypeScript, Web3.Js Solidity, Blockchain, Jest.
           "
           />
-          <Experties
+          <Expertise
             title="FrontEnd Develpoment"
             Icon={Lcomputer}
             desc="
@@ -139,7 +139,7 @@ const Home = () => {
           experience in HTML, CSS, Figma, JS, React, Redux, and NextJS frameworks.
           "
           />
-          <Experties
+          <Expertise
             title="Soft Skills"
             Icon={LvideoCon}
             desc="
