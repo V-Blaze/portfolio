@@ -29,7 +29,7 @@ const Navbar = () => {
           />
 
           <div
-            className="w-[72px] h-full rounded-[20px] bg-[#4acd8d] flex justify-center items-center cursor-pointer"
+            className="w-[72px] h-full rounded-[20px] bg-[#16643f] flex justify-center items-center cursor-pointer"
             role="button"
             tabIndex="0"
             onClick={() => {
@@ -54,7 +54,7 @@ const Navbar = () => {
           {/* <CustomButton
             btnType="button"
             title="Contact"
-            styles="bg-[#1dc071]"
+            styles="bg-[#16643f]"
             handleClick={() => {
               navigate('Contact');
             }}
@@ -117,7 +117,7 @@ const Navbar = () => {
                     alt={link.name}
                     className={`w-[24px] h-[24px] object-contain ${isActive === link.name ? 'grayscale-0' : 'grayscale'}`}
                   />
-                  <p className={`ml-[20px] font-epilogue font-semibold text-[14px] ${isActive === link.name ? 'text-[#1dc071]' : 'text-[#808191]'}`}>
+                  <p className={`ml-[20px] font-epilogue font-semibold text-[14px] ${isActive === link.name ? 'text-[#16643f]' : 'text-[#fff]'}`}>
                     {link.name}
                   </p>
                 </li>
@@ -128,7 +128,7 @@ const Navbar = () => {
               {/* <CustomButton
                 btnType="button"
                 title="Contact"
-                styles="bg-[#1dc071]"
+                styles="bg-[#16643f]"
                 handleClick={() => {
                   navigate('Contact');
                 }}

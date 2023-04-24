@@ -17,7 +17,7 @@ const Project = ({ project }) => {
         <img src={imgUrl} alt={name} className=" h-[250px] lg:h-[320px] rounded-xl w-full hover:translate-x-1 hover:rotate-2 hover:ease-linear" />
         <div className="flex flex-col">
           <h3 className=" text-white text-3xl font-bold mb-4 ">{name}</h3>
-          <span className="text-[#A3B3BC] text-normal font-epilogue my-3 block">{desc}</span>
+          <span className="text-[#fff] text-normal font-epilogue my-3 block">{desc}</span>
           <button type="button" id={id} className=" border-none bg-transparent text-white self-center underline">Details</button>
         </div>
       </div>
@@ -30,7 +30,7 @@ const Project = ({ project }) => {
         <CustomButton
           btnType="button"
           title="View Live"
-          styles="bg-[#1dc071]"
+          styles="bg-[#16643f]"
           handleClick={() => {
             openInNewTab(liveLink);
           }}
@@ -38,7 +38,7 @@ const Project = ({ project }) => {
         <CustomButton
           btnType="button"
           title="Source Code"
-          styles="bg-[#1dc071]"
+          styles="bg-[#16643f]"
           handleClick={() => {
             openInNewTab(codeLink);
           }}

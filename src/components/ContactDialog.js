@@ -16,7 +16,7 @@ export default function Example() {
 
   return (
     <>
-      <Button onClick={handleOpen} variant="gradient" className="relative px-5 py-3 overflow-hidden font-medium text-white bg-[#1dc071] rounded-lg shadow-inner">
+      <Button onClick={handleOpen} variant="gradient" className="relative px-5 py-3 overflow-hidden font-medium text-white bg-[#16643F] rounded-lg shadow-inner">
         Contact Me
       </Button>
       <Dialog

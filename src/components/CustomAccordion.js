@@ -17,7 +17,7 @@ const CustomAccordion = ({
   return (
     <>
       <Accordion open={open === (num + 1)} animate={customAnimation} className="my-4">
-        <AccordionHeader onClick={() => { handleOpenProp((num + 1)); }} className=" flex items-center justify-between text-[0.75rem] text-white bg-[#1DC071] w-full rounded-xl px-2 m-auto">
+        <AccordionHeader onClick={() => { handleOpenProp((num + 1)); }} className=" flex items-center justify-between text-[0.75rem] text-white bg-[#16643f] w-full rounded-xl px-2 m-auto">
           <span className="w-[75%] mr-auto">{position}</span>
           <span>{year}</span>
           <span className="ml-auto">{open !== (num + 1) ? '+' : '-'}</span>

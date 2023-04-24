@@ -18,7 +18,7 @@ return (
       <h3 className="text-white text-3xl font-bold col-span-4">{title}</h3>
     </div>
     <div className="p-8">
-      <span className="text-[#A3B3BC] text-xl font-epilogue my-3 block ">
+      <span className="text-[#fff] text-xl font-epilogue my-3 block ">
         {desc}
       </span>
     </div>
